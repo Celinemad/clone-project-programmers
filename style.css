@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans KR",sans-serif;
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #06f;
+}
+
+body nav {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 4.75rem;
+    align-items: center;
+    justify-content: center;
+    font-size: .875rem;
+    background: #06f;
+    padding: 0 6.5rem;
+}
+
+body nav .container {
+    position:relative;
+    display: flex;
+    width: 100%;
+    height: 4.75rem;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+    color: #fff;
+}
+
+body .hd {
+    display: flex;
+    justify-content: center;
+    background: #06f;
+}
+
+body .hd .container {
+    display: grid;
+    width: 1200px;
+    height: 100%;
+    padding: 0 1.25rem;
+    background: #06f;
+    grid-template-columns: auto 468px;
+}
+
+body .hd .container .hd-left {
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+body .hd .container .hd-right {
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* navigation bar */
+nav img {
+    width: 11.125rem;
+}
+
+nav .container a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* header */
+.he-left {
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hd-left .content {
+    margin-top: 6.75rem;
+    margin-bottom: 0.875rem;
+    color: rgba(255,255,255,.7);
+}
+
+.hd-left .title {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.hd-left img {
+    width: 80%;
+    max-width: 31.25rem;
+}
+
+.hd-right {
+    position: relative;
+    display:flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hd-right .account {
+    width: 100%;
+    border: 1px solid #d7d7d7;
+    border-radius: 0.9375rem;
+    margin-top: 6.75rem;
+    background: #f9fafb;
+}
+
+.hd-right .info {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 3.75rem;
+    color:#fff;
+    font-size: .9375rem;
+}
+
+.hd-right .login { 
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hd-right .login .options {
+    display: grid;
+    width: 100%;
+    height: 3.125rem;
+    align-items: center;
+    border-radius: 0.9375rem 0.9375rem 0 0;
+    background: #f4f4f4;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hd-right .login .options a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.9375rem 0.9375rem 0 0;
+    margin: auto;
+    text-decoration: none;
+}
+
+.hd-right .login .options .option-login {
+    box-sizing: content-box;
+    padding-bottom: 1rem;
+    background: #fff;
+    color: #0078ff;
+    font-weight: 700;
+}
+
+.hd-right .login .options .option-sign-in {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border-radius: 0.9375rem 0.9375rem 0 0;
+    margin: auto;
+    background: #f4f4f4;
+    color: black
+}
+
+.hd-right .login .client {
+    width: 100%;
+    height: 100%;
+    padding: 1.875rem 2rem;
+    border-radius: 0.9375rem;
+    background: #fff;
+}
+
+.client-email {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: .8125rem;
+    font-weight: 700;
+}
+
+.client-email-input {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.client-email-input input{
+    width: 100%;
+    height: 2.875rem;
+    padding: 0.5rem 2.5rem 0.5rem 0.875rem;
+    border: 1px solid #d2d2d2;
+    border-radius: 0.25rem;
+    padding-left: 2.75rem;
+}
+
+.client-email-input .email-icon {
+    position: absolute;
+    left: 1.0625rem;
+    color: #d2d2d2
+}
+
+.client-pwd {
+    margin-top: 2.25rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: .8125rem;
+    font-weight: 700;
+}
+
+.client-pwd a {
+    color: #3376f6;
+    float: right;
+    font-size: .8125rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.client-pwd-input {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.client-pwd-input input {
+    width: 100%;
+    height: 2.875rem;
+    padding: 0.5rem 2.5rem 0.5rem 0.875rem;
+    border: 1px solid #d2d2d2;
+    border-radius: 0.25rem;
+    padding-left: 2.75rem;
+}
+
+.pwd-icon {
+    z-index: 3;
+    position: absolute;
+    left: 1.0625rem;
+    color: #d2d2d2
+}
+
+.viewbox {
+    position: absolute;
+    right: 2.3rem;
+}
+
+.viewbox img {
+    width: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.login-btn {
+    border: 0;
+    width: 100%;
+    height: 2.75rem;
+    border-radius: 4px;
+    margin-top: 2.75rem;
+    background: #4981f8;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.other-account {
+    margin-top: 3.5rem;
+    font-size: .8125rem;
+    text-align: center;
+}
+
+.login-msg {
+    margin-bottom: 1.5rem;
+}
+
+.account-choices {
+    width: 100%;
+    justify-content: center;
+    margin-top: 3.5rem;
+    font-size: .8125rem;
+    text-align: center;
+}
+
+.login-msg {
+    margin-bottom: 1.5rem;
+}
+
+.account-choices {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button { 
+    border: 0;
+    background: none;
+}
+
+.account-btn { 
+    width: 3.125rem;
+    border-radius: 0.5rem;
+}
+
+.logo {
+    color: #505050;
+    font-size: .75rem;
+    line-height: 1.0625rem;
+    text-align: center;
+}
+
+.info { 
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 3.75rem;
+    font-size: .9375rem;
+}
+
+.info-option1 {
+    text-decoration: none;
+    text-align: right;
+    color: #fff;
+}
+
+
+.info-option2 {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+}
+
+.info-option3 {
+    text-decoration: none;
+    text-align: left;
+    color: #fff;
+}
+
+
+hr {
+    width: 1px;
+    height: 0.75rem;
+    margin: 0 1.125rem;
+    background: #fff;
+    opacity: .3;
+}
